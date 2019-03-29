@@ -1,0 +1,11 @@
+Tuan :
+	- User :  add describle for state ?
+	- Relationship wrong : role - user; town - province ;
+	- Profile : 1 table have 2 primary key ?
+		+ Fullname ? 
+		+ cmnd ? bank card if trasnport in banking ?
+	- Town : 2 primary key ? 
+Khang :
+	- Ralationship wrong : Job recument - Job ;
+	- if ralation 1 - 1 : whether need "chuan hoa " many table ?
+	...
