@@ -2473,7 +2473,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1456,
+									"left": 1436,
 									"top": 499,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2525,7 +2525,7 @@
 								"$ref": "AAAAAAFpzURd3x0+J3E="
 							},
 							"lineStyle": 2,
-							"points": "1170:456;1272:456;1272:520;1640:520;1640:888;1480:888",
+							"points": "1170:456;1272:456;1272:520;1600:520;1600:888;1480:888",
 							"nameLabel": {
 								"$ref": "AAAAAAFpzZW14x/j/O4="
 							},
@@ -3114,7 +3114,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 633,
-									"top": 509,
+									"top": 513,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -3148,7 +3148,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 710,
-									"top": 443,
+									"top": 451,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -3165,7 +3165,7 @@
 								"$ref": "AAAAAAFpza8D3SGjXqw="
 							},
 							"lineStyle": 2,
-							"points": "623:568;648:568;648:464;736:464",
+							"points": "623:568;648:568;648:472;736:472",
 							"nameLabel": {
 								"$ref": "AAAAAAFpzcbqFSJyTmw="
 							},
@@ -3242,21 +3242,6 @@
 										},
 										{
 											"_type": "ERDColumnView",
-											"_id": "AAAAAAFpzcnTcSLBvaM=",
-											"_parent": {
-												"$ref": "AAAAAAFpzcmt/yK0MIU="
-											},
-											"model": {
-												"$ref": "AAAAAAFpzcnTNiK+06Y="
-											},
-											"font": "Arial;13;0",
-											"left": 693,
-											"top": 923,
-											"width": 167,
-											"height": 13
-										},
-										{
-											"_type": "ERDColumnView",
 											"_id": "AAAAAAFpzcvHBiLfPD4=",
 											"_parent": {
 												"$ref": "AAAAAAFpzcmt/yK0MIU="
@@ -3266,7 +3251,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 693,
-											"top": 938,
+											"top": 923,
 											"width": 167,
 											"height": 13
 										},
@@ -3281,7 +3266,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 693,
-											"top": 953,
+											"top": 938,
 											"width": 167,
 											"height": 13
 										},
@@ -3296,7 +3281,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 693,
-											"top": 968,
+											"top": 953,
 											"width": 167,
 											"height": 13
 										},
@@ -3311,7 +3296,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 693,
-											"top": 983,
+											"top": 968,
 											"width": 167,
 											"height": 13
 										}
@@ -3320,14 +3305,14 @@
 									"left": 688,
 									"top": 903,
 									"width": 177,
-									"height": 98
+									"height": 83
 								}
 							],
 							"font": "Arial;13;0",
 							"left": 688,
 							"top": 880,
 							"width": 177,
-							"height": 121,
+							"height": 113,
 							"nameLabel": {
 								"$ref": "AAAAAAFpzcmt/yKz7JA="
 							},
@@ -3726,7 +3711,7 @@
 							"left": 232,
 							"top": 880,
 							"width": 409,
-							"height": 100,
+							"height": 70,
 							"text": "- jobWageCost = minimunWage * workMonthAmount .\n\n- if a JobWageBill is created , imediately set wagePayment = paid \nin JobRecumentProcessing table !",
 							"wordWrap": false
 						},
@@ -3758,7 +3743,7 @@
 							"tail": {
 								"$ref": "AAAAAAFpziJHLSUQSaY="
 							},
-							"points": "768:1048;768:1000"
+							"points": "768:1048;768:992"
 						},
 						{
 							"_type": "UMLNoteLinkView",
@@ -3974,7 +3959,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1577,
-									"top": 449,
+									"top": 473,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -3991,7 +3976,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 1505,
-									"top": 435,
+									"top": 459,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -4025,7 +4010,7 @@
 								"$ref": "AAAAAAFpzURd4B1/C7Y="
 							},
 							"lineStyle": 2,
-							"points": "1480:456;1592:456;1592:427",
+							"points": "1480:480;1592:480;1592:427",
 							"nameLabel": {
 								"$ref": "AAAAAAFpz0+wuidFC7E="
 							},
@@ -4071,7 +4056,7 @@
 										"$ref": "AAAAAAFpz3etaSdsDjw="
 									},
 									"font": "Arial;13;0",
-									"left": 867,
+									"left": 865,
 									"top": 845,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -4106,7 +4091,7 @@
 								"$ref": "AAAAAAFpzcmt/yKyx5Y="
 							},
 							"lineStyle": 1,
-							"points": "856:879;928:824;952:360;918:340",
+							"points": "853:879;928:824;952:360;918:340",
 							"nameLabel": {
 								"$ref": "AAAAAAFpz3etaSdtfew="
 							},
@@ -4852,8 +4837,7 @@
 								"$ref": "AAAAAAFpvrtrZF64nrc="
 							},
 							"name": "provinceID",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -5403,16 +5387,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFpzcmt/yKw+HQ="
 							},
-							"name": "referralBillNo",
-							"length": 0
-						},
-						{
-							"_type": "ERDColumn",
-							"_id": "AAAAAAFpzcnTNiK+06Y=",
-							"_parent": {
-								"$ref": "AAAAAAFpzcmt/yKw+HQ="
-							},
-							"name": "wageBillID",
+							"name": "referralBillID",
 							"length": 0,
 							"primaryKey": true
 						},
@@ -5423,8 +5398,7 @@
 								"$ref": "AAAAAAFpzcmt/yKw+HQ="
 							},
 							"name": "jobRecumentID",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -5432,7 +5406,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFpzcmt/yKw+HQ="
 							},
-							"name": "referralWage",
+							"name": "referralWageCost",
 							"length": 0
 						},
 						{
@@ -5529,8 +5503,9 @@
 							"_parent": {
 								"$ref": "AAAAAAFpzeWCKCOFNOk="
 							},
-							"name": "jobBillNo",
-							"length": 0
+							"name": "jobBillID",
+							"length": 0,
+							"primaryKey": true
 						},
 						{
 							"_type": "ERDColumn",
@@ -5539,8 +5514,7 @@
 								"$ref": "AAAAAAFpzeWCKCOFNOk="
 							},
 							"name": "jobRecumentID",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -5549,8 +5523,7 @@
 								"$ref": "AAAAAAFpzeWCKCOFNOk="
 							},
 							"name": "employeeID",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -5605,7 +5578,8 @@
 								"$ref": "AAAAAAFpz01WtCbtM2A="
 							},
 							"name": "bonusTimeID",
-							"length": 0
+							"length": 0,
+							"primaryKey": true
 						},
 						{
 							"_type": "ERDColumn",
@@ -5614,8 +5588,7 @@
 								"$ref": "AAAAAAFpz01WtCbtM2A="
 							},
 							"name": "startTime",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -5624,8 +5597,7 @@
 								"$ref": "AAAAAAFpz01WtCbtM2A="
 							},
 							"name": "endTime",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						}
 					]
 				}
@@ -6915,7 +6887,7 @@
 										},
 										{
 											"_type": "ERDColumnView",
-											"_id": "AAAAAAFpz88m1HIweRE=",
+											"_id": "AAAAAAFp44bYNtGVj4U=",
 											"_parent": {
 												"$ref": "AAAAAAFpzUQbKxnUCzg="
 											},
@@ -6930,7 +6902,7 @@
 										},
 										{
 											"_type": "ERDColumnView",
-											"_id": "AAAAAAFpz88m13Izvdg=",
+											"_id": "AAAAAAFp44bYOdGY4XY=",
 											"_parent": {
 												"$ref": "AAAAAAFpzUQbKxnUCzg="
 											},
@@ -7371,7 +7343,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFpzUQbLBne7PY="
 							},
-							"name": "idTown",
+							"name": "townID",
 							"length": 0
 						},
 						{
@@ -8153,7 +8125,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFpzUQbLxoqSdo="
 							},
-							"name": "referralWage",
+							"name": "referralWageCost",
 							"length": 0
 						},
 						{
@@ -8213,7 +8185,8 @@
 								"$ref": "AAAAAAFpzUQbLxo9VG8="
 							},
 							"name": "workTimeID",
-							"length": 0
+							"length": 0,
+							"primaryKey": true
 						},
 						{
 							"_type": "ERDColumn",
@@ -8222,8 +8195,7 @@
 								"$ref": "AAAAAAFpzUQbLxo9VG8="
 							},
 							"name": "startTime",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -8232,8 +8204,7 @@
 								"$ref": "AAAAAAFpzUQbLxo9VG8="
 							},
 							"name": "endTime",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -8242,8 +8213,7 @@
 								"$ref": "AAAAAAFpzUQbLxo9VG8="
 							},
 							"name": "firstBonusTimeID",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						},
 						{
 							"_type": "ERDColumn",
@@ -8252,8 +8222,7 @@
 								"$ref": "AAAAAAFpzUQbLxo9VG8="
 							},
 							"name": "secondBonusTimeID",
-							"length": 0,
-							"primaryKey": true
+							"length": 0
 						}
 					]
 				}
