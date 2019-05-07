@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoginModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSOWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_STATUS" Type="Int32" />
+    <Property Name="ROLE_ID" Type="Int32" />
+    <Property Name="JOINED_DATE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FACEBOOK_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GMAIL_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RESET_TOKEN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="LoginEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="USERS" EntityType="Self.USER" />
+  </EntityContainer>
+</Schema>

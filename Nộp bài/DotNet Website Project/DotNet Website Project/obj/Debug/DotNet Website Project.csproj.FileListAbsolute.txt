@@ -172,3 +172,7 @@ D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\obj\D
 D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\obj\Debug\DotNet Website Project.csproj.CopyComplete
 D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\obj\Debug\DotNet Website Project.dll
 D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\obj\Debug\DotNet Website Project.pdb
+D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\bin\EntityFramework.dll
+D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\bin\EntityFramework.SqlServer.dll
+D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\bin\EntityFramework.xml
+D:\VisualStudio\source\repos\DotNet Website Project\DotNet Website Project\bin\EntityFramework.SqlServer.xml

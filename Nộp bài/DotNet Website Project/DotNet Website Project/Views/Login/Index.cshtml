@@ -1,0 +1,104 @@
+﻿@model DotNet_Website_Project.Models.USER
+@{
+    Layout = null;
+    
+}
+
+        <!DOCTYPE html>
+
+        <html>
+        <head>
+            <meta name="viewport" content="width=device-width" />
+            <title>Login page</title>
+
+            <link rel="stylesheet" href="../../Content/frontendCSS/style.css" />
+            <link rel="stylesheet" href="../../Content/frontendCSS/colors/green.css" id="colors" />
+            <style>
+                .field-validation-error{color:red;}
+            </style>
+        </head>
+        <body>
+            <div id="titlebar" class="single">
+                <div class="container">
+                    <div class="sixteen columns">
+                        <h2>My Account</h2>
+                        <nav id="breadcrumbs">
+                            <ul>
+                                <li>You are here:</li>
+                                <li><a href="#">Home</a></li>
+                                <li>My Account</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="my-account">
+
+
+                    <div class="tabs-container">
+                        <!-- Login -->
+                        <div class="tab-content" id="tab1" style="display: none;">
+
+                            <h3 style="text-align: center;" class="margin-bottom-10 margin-top-10">Đăng nhập</h3>
+                            @using (Html.BeginForm("Autherize", "Login", FormMethod.Post))
+                            {
+                                <p class="form-row form-row-wide">
+                                    @Html.LabelFor(model => model.USERNAME)
+                                    @Html.EditorFor(model => model.USERNAME)
+                                    @Html.ValidationMessageFor(model => model.USERNAME)
+                                </p>
+
+                                <p class="form-row form-row-wide">
+                                    @Html.LabelFor(model => model.PASSOWORD)
+                                    @Html.EditorFor(model => model.PASSOWORD)
+                                    @Html.ValidationMessageFor(model => model.PASSOWORD)
+                                </p>
+                                <p class="form-row form-row-wide">
+                                    <span class="field-validation-error">
+                                        @Html.DisplayFor(model => model.LoginErrorMessage)
+                                    </span>
+                                </p>
+                                <p style="width: 29%;margin : 0 auto" class="form-row">
+                                    <input type="submit" class="button" name="login" value="Đăng nhập" />
+
+                                </p>
+                                <p style="width: 29%;margin : 0 auto" class="lost_password">
+                                    <a href="#"> Quên mật khẩu ?</a>
+                                </p>
+
+
+                                <label style="width: 40%;font-size:12pt;margin : 0 auto">Đăng nhập với tài khoản </label>
+                                <div style="width : 25%;margin: 0 auto;">
+                                    <ul class="social-icons">
+                                        <li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+                                        <li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scripts
+    ================================================== -->
+            <script src="../../Scripts/JQuery/jquery-2.1.3.min.js"></script>
+            <script src="../../Scripts/Frontend/custom.js"></script>
+            <script src="../../Scripts/JQuery/jquery.superfish.js"></script>
+            <script src="../../Scripts/JQuery/jquery.themepunch.tools.min.js"></script>
+            <script src="../../Scripts/JQuery/jquery.themepunch.revolution.min.js"></script>
+            <script src="../../Scripts/JQuery/jquery.themepunch.showbizpro.min.js"></script>
+            <script src="../../Scripts/JQuery/jquery.flexslider-min.js"></script>
+            <script src="../../Scripts/Frontend/chosen.jquery.min.js"></script>
+            <script src="../../Scripts/JQuery/jquery.magnific-popup.min.js"></script>
+            <script src="../../Scripts/Frontend/waypoints.min.js"></script>
+            <script src="../../Scripts/JQuery/jquery.counterup.min.js"></script>
+            <script src="../../Scripts/JQuery/jquery.jpanelmenu.js"></script>
+            <script src="../../Scripts/Frontend/stacktable.js"></script>
+
+            <script src="~/Scripts/jquery.validate.min.js"></script>
+            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+        </body>
+    </html>

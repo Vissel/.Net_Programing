@@ -1,6 +1,10 @@
 ﻿    <%@ Page Title="Trang Đăng Nhập" Language="C#" MasterPageFile="~/pagesFrontend/FrontendLayout.Master" AutoEventWireup="true" CodeBehind="dangnhap.aspx.cs" Inherits="DotNet_Website_Project.dangnhap" %>
-<asp:Content ID="dangnhapContent" ContentPlaceHolderID="MainContent" runat="server">
-
+ <asp:Content ID="dangnhapContent" ContentPlaceHolderID="MainContent" runat="server"> 
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        </head>
     <body>
         <div class="clearfix"></div>
 
@@ -35,24 +39,24 @@
 
 				<h3 style="text-align: center;" class="margin-bottom-10 margin-top-10">Đăng nhập</h3>
 
-				<form method="post" class="login">
+				<form method="post" class="login" runat="server">
 
 					
 					<p class="form-row form-row-wide">
 						<label for="username">Tài khoản :</label>
-						<input type="text" class="input-text" name="username" id="username" value="" />
+                        <asp:TextBox ID="username" CssClass="input-text" runat="server" ></asp:TextBox>
 					</p>
 
 					<p class="form-row form-row-wide">
 						<label for="password">Mật khẩu:</label>
-						<input class="input-text" type="password" name="password" id="password" />
+                        <asp:PasswordRecovery ID="password" CssClass="input-text" runat="server"></asp:PasswordRecovery>
 					</p>
 
 
 					<p style="width: 29%;margin : 0 auto" class="form-row">
 						<input type="submit" class="button" name="login" value="Đăng nhập" />
+                        <asp:Button ID="Login" OnClick="Login_Click" runat="server" />
 
-						<label for="rememberme" class="rememberme">
 					</p>
 					<p style="width: 29%;margin : 0 auto" class="lost_password">
 					<a href="#" > Quên mật khẩu ?</a>
@@ -76,5 +80,6 @@
 		</div>
 	</div>
 </div>
-      </body>
+</body>
+</html>
 </asp:Content>

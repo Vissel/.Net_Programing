@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LTNetModelStoreContainer" CdmEntityContainer="LoginEntities">
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="LT.NetModel.USER">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSOWORD" ColumnName="PASSOWORD" />
+          <ScalarProperty Name="USER_STATUS" ColumnName="USER_STATUS" />
+          <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+          <ScalarProperty Name="JOINED_DATE" ColumnName="JOINED_DATE" />
+          <ScalarProperty Name="FACEBOOK_ID" ColumnName="FACEBOOK_ID" />
+          <ScalarProperty Name="GMAIL_ID" ColumnName="GMAIL_ID" />
+          <ScalarProperty Name="RESET_TOKEN" ColumnName="RESET_TOKEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

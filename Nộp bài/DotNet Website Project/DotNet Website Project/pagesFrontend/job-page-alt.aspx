@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="../Content/frontendCSS/colors/green.css" id="colors" />
 
 
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
 
 </head>
 

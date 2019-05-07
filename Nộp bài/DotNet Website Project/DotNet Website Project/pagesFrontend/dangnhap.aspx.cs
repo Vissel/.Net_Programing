@@ -13,5 +13,10 @@ namespace DotNet_Website_Project
         {
 
         }
+
+        protected void Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
