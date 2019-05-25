@@ -1,0 +1,116 @@
+﻿@using PHocKi.Models
+@using Microsoft.Owin.Security
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Content
+================================================== -->
+<!-- Container -->
+<div class="container">
+
+    <div class="my-account">
+
+
+        <div class="tabs-container">
+            <!-- Login -->
+            <div class="tab-content" id="tab1" style="display: none;">
+
+                <span style="color:red; font-size:20px ">@ViewBag.notify</span>
+
+
+                <h3 style="text-align: center;" class="margin-bottom-10 margin-top-10">Đăng ký</h3>
+
+                <form action="DangKiVao" method="post" class="login">
+
+
+                    <p class="form-row form-row-wide">
+                        <label for="username">Tài khoản :</label>
+                        <input type="text" class="input-text" name="username" id="username" value="" />
+                    </p>
+
+                    <p class="form-row form-row-wide">
+                        <label for="password">Mật khẩu:</label>
+                        <input class="input-text" type="password" name="password" id="password" />
+                    </p>
+                    <p class="form-row form-row-wide">
+
+                        <label for="password">Nhập lại mật khẩu:</label>
+                        <span id='checkpass'></span>
+                        <input class="input-text" type="password" name="passwordagain" id="passwordagain" />
+                    </p>
+                    <p class="form-row form-row-wide">
+                        <label for="password">Chức vụ :</label>
+                        <select style="height:50px;" name="chucvu" id="chucvu">
+                            <option value"1">Người tìm việc</option>
+                            <option value"2">Người thuê việc</option>
+                        </select>
+                    </p>
+
+                    <p style="width: 29%;margin : 0 auto" class="form-row">
+
+                        <input style=" pointer-events: none;" type="submit" class="button" name="login" id="login" disabled value="Đăng ký" />
+                    </p>
+
+                </form>
+
+
+                <hr />
+
+
+                <h4 style="text-align: center;" class="margin-bottom-10 margin-top-10">Hoặc đăng kí bằng qua Facebook hoặc Gmail</h4>
+                <div style="text-align: center">
+
+
+                    <div style=" display: inline-block;">
+                        @{
+                            var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+
+
+                            using (Html.BeginForm("ExternalLogin", "Account", "DangKi"))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div id="socialLoginList">
+                                    <p>
+                                        @foreach (AuthenticationDescription p in loginProviders)
+                                        {
+                                            <button type="submit" class="btn btn-default" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account"><span class="fa fa-@p.AuthenticationType.ToLower()"></span>   @p.AuthenticationType</button>
+                                        }
+                                    </p>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+
+        $('#password, #passwordagain').on('keyup', function () {
+            if ($('#password').val() != "" && ($('#password').val() == $('#passwordagain').val())) {
+                $('#checkpass').html('Mật khẩu trùng khớp').css('color', 'green');
+
+                $('#login').css('pointer-events', 'auto');
+
+                document.getElementById("login").disabled = false;
+            } else {
+                $('#checkpass').html('Mật khẩu không trùng khớp').css('color', 'red');
+
+                $('#login').css('pointer-events', 'none');
+                document.getElementById("login").disabled = true;
+            }
+        });
+
+    </script>
+    }
+
